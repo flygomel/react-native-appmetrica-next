@@ -71,11 +71,11 @@
         id<YMMNameAttribute> nameAttribute = [YMMProfileAttribute name];
         [profile apply:[nameAttribute withValue:configDict[@"name"]]];
     }
-    if (configDict[@"floor"] != nil && [configDict[@"floor"] isEqualToString:@"male"]) {
+    if (configDict[@"gender"] != nil && [configDict[@"gender"] isEqualToString:@"male"]) {
         id<YMMGenderAttribute> genderAttribute = [YMMProfileAttribute gender];
         [profile apply:[genderAttribute withValue:YMMGenderTypeMale]];
     }
-    if (configDict[@"floor"] != nil && [configDict[@"floor"] isEqualToString:@"female"]) {
+    if (configDict[@"gender"] != nil && [configDict[@"gender"] isEqualToString:@"female"]) {
         id<YMMGenderAttribute> genderAttribute = [YMMProfileAttribute gender];
         [profile apply:[genderAttribute withValue:YMMGenderTypeFemale]];
     }

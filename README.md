@@ -37,7 +37,7 @@ AppMetrica.activate({
 RNAppMetrica.setUserProfileID("id");
 RNAppMetrica.reportUserProfile({
   name: "Andrey Bondarenko",
-  floor: "male",
+  gender: "male",
   age: 34,
   isNotification: true,
 });
