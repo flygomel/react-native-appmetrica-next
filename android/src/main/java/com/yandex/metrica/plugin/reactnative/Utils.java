@@ -56,9 +56,9 @@ abstract class Utils {
         if (configMap.hasKey("firstActivationAsUpdate")) {
             builder.handleFirstActivationAsUpdate(configMap.getBoolean("firstActivationAsUpdate"));
         }
-        if (configMap.hasKey("installedAppCollecting")) {
-            builder.withInstalledAppCollecting(configMap.getBoolean("installedAppCollecting"));
-        }
+        // if (configMap.hasKey("installedAppCollecting")) {
+        //     builder.withInstalledAppCollecting(configMap.getBoolean("installedAppCollecting"));
+        // }
         if (configMap.hasKey("location")) {
             builder.withLocation(toLocation(configMap.getMap("location")));
         }
@@ -82,6 +82,16 @@ abstract class Utils {
         }
         if (configMap.hasKey("statisticsSending")) {
             builder.withStatisticsSending(configMap.getBoolean("statisticsSending"));
+        }
+
+        if (configMap.hasKey("revenueAutoTrackingEnabled")) {
+            builder.withRevenueAutoTrackingEnabled(configMap.getBoolean("revenueAutoTrackingEnabled"));
+        }
+        if (configMap.hasKey("sessionsAutoTracking")) {
+            builder.withSessionsAutoTrackingEnabled(configMap.getBoolean("sessionsAutoTracking"));
+        }
+        if (configMap.hasKey("userProfileID")) {
+            builder.withUserProfileID(configMap.getString("userProfileID"));
         }
 
         return builder.build();

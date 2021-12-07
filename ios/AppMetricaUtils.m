@@ -49,6 +49,13 @@
         configuration.statisticsSending = [configDict[@"statisticsSending"] boolValue];
     }
 
+    if (configDict[@"revenueAutoTrackingEnabled"] != nil) {
+        configuration.statisticsSending = [configDict[@"revenueAutoTrackingEnabled"] boolValue];
+    }
+    if (configDict[@"userProfileID"] != nil) {
+        configuration.userProfileID = configDict[@"userProfileID"];
+    }
+
     return configuration;
 }
 
