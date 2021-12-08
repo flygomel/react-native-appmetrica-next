@@ -28,8 +28,7 @@ abstract class Utils {
         if (configMap.hasKey("name")) {
             userProfile.apply(Attribute.name().withValue(configMap.getString("name")));
         }
-        String gender = configMap.getString("gender");
-        Log.w("TAG", gender);
+
         if (configMap.hasKey("gender") &&  "male".equals(configMap.getString("gender"))) {
             userProfile.apply(Attribute.gender().withValue(GenderAttribute.Gender.MALE));
         } else if(configMap.hasKey("gender") && "female".equals(configMap.getString("gender"))) {
