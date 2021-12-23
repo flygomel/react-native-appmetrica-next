@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   s.dependency 'YandexMobileMetrica', '4.0.0'
-  s.dependency 'YandexMobileMetricaPush', '1.1.1'
-  s.dependency 'Firebase/Messaging'
+  # s.dependency 'YandexMobileMetricaPush', '1.1.1'
+  # s.dependency 'Firebase/Messaging'
 end
