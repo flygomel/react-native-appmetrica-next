@@ -18,7 +18,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.yandex.metrica.YandexMetrica;
-import com.yandex.metrica.push.YandexMetricaPush;
+// import com.yandex.metrica.push.YandexMetricaPush;
 
 
 public class AppMetricaModule extends ReactContextBaseJavaModule {
@@ -52,15 +52,15 @@ public class AppMetricaModule extends ReactContextBaseJavaModule {
         }
     }
 
-    @ReactMethod
-    public void initPush() {
-        YandexMetricaPush.init(reactContext);
-    }
+    // @ReactMethod
+    // public void initPush() {
+    //     YandexMetricaPush.init(reactContext);
+    // }
 
-    @ReactMethod
-    public void getToken(Promise promise) {
-        promise.resolve(YandexMetricaPush.getToken());
-    }
+    // @ReactMethod
+    // public void getToken(Promise promise) {
+    //     promise.resolve(YandexMetricaPush.getToken());
+    // }
 
     @ReactMethod
     public void reportUserProfile(ReadableMap configAttributes) {
