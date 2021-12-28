@@ -8,7 +8,7 @@
 
 #import <React/RCTConvert.h>
 #import "AppMetrica.h"
-#import <Firebase/Firebase.h>
+// #import <Firebase/Firebase.h>
 #import "AppMetricaUtils.h"
 // #import <YandexMobileMetricaPush/YMPYandexMetricaPush.h>
 
