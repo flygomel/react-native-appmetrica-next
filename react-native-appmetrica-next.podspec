@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.static_framework = true
 
-  s.dependency "React"
+  s.dependency "React-Core"
   s.dependency 'YandexMobileMetrica', '4.0.0'
   # s.dependency 'YandexMobileMetricaPush', '1.1.1'
   # s.dependency 'Firebase/Messaging'
